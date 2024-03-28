@@ -15,7 +15,7 @@ public class Snack4 {
         //for inverso
         for (int i = strInArray.length - 1; i >= 0 ; i--) {
             char reverseChar = strInArray[i];
-            //contatenamento
+            //concatenamento
             reverseStr += reverseChar;
         }
         if (reverseStr.equals(str)){
