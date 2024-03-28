@@ -11,10 +11,17 @@ public class Snack4 {
         String str = keyboard.nextLine();
         //Conversione da stringa ad Array
         char[] strInArray = str.toCharArray();
+        String reverseStr= "";
         //for inverso
         for (int i = strInArray.length - 1; i >= 0 ; i--) {
             char reverseChar = strInArray[i];
-            System.out.println(reverseChar);
+            //contatenamento
+            reverseStr += reverseChar;
+        }
+        if (reverseStr.equals(str)){
+            System.out.println("la parola scritta è palindroma");
+        }else {
+            System.out.println("la parola non è palindroma");
         }
     }
 }
