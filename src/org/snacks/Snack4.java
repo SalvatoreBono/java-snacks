@@ -1,5 +1,6 @@
 package org.snacks;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Snack4 {
@@ -8,8 +9,12 @@ public class Snack4 {
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Verifica se palindroma");
         String str = keyboard.nextLine();
-        for (int i = 0; i < str.length(); i++) {
-            char singleChar = str.charAt(i);
+        //Conversione da stringa ad Array
+        char[] strInArray = str.toCharArray();
+        //for inverso
+        for (int i = strInArray.length - 1; i >= 0 ; i--) {
+            char reverseChar = strInArray[i];
+            System.out.println(reverseChar);
         }
     }
 }
